@@ -1,0 +1,4 @@
+services:
+#    owl_site.example:
+#        class: Owl\SiteBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

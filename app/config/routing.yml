@@ -1,0 +1,5 @@
+owl_site:
+    resource: "@OwlSiteBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
