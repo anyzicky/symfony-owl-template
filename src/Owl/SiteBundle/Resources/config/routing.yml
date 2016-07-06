@@ -1,0 +1,5 @@
+owl_site_homepage:
+  path: /
+  defaults: { _controller: OwlSiteBundle:Page:index }
+  requirements:
+    methods: GET
