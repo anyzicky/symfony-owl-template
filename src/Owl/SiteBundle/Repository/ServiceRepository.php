@@ -12,4 +12,16 @@ use Doctrine\ORM\EntityRepository;
  */
 class ServiceRepository extends EntityRepository
 {
+    public function getServices($limit = 4)
+    {
+        $service = $this->createQueryBuilder('b')
+                        ->select('b')
+                        ->addOrderBy('b.sort', 'ASC');
+
+        if(false === is_null($limit)) {
+            $service->setMaxResults($limit);
+        }
+
+        return $service->getQuery()->getResult();
+    }
 }
